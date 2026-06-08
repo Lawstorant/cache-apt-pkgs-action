@@ -110,7 +110,7 @@ runs:
 
     - id: upload-logs
       if: ${{ env.CACHE_KEY && inputs.debug == 'true' }}
-      uses: actions/upload-artifact@7
+      uses: actions/upload-artifact@v7
       with:
         name: cache-apt-pkgs-logs_${{ env.CACHE_KEY }}
         path: ~/cache-apt-pkgs/*.log
